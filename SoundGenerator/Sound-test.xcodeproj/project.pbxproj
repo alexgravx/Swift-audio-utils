@@ -11,8 +11,8 @@
 		CB7FF8282B91EDD7001D1FE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7FF8272B91EDD7001D1FE5 /* ContentView.swift */; };
 		CB7FF82A2B91EDD8001D1FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7FF8292B91EDD8001D1FE5 /* Assets.xcassets */; };
 		CB7FF82D2B91EDD8001D1FE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7FF82C2B91EDD8001D1FE5 /* Preview Assets.xcassets */; };
-		CB7FF8352B91F2B9001D1FE5 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB7FF8342B91F2B9001D1FE5 /* song.mp3 */; };
 		CBD276C12B92327C00FD61F4 /* Sound-generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD276C02B92327C00FD61F4 /* Sound-generator.swift */; };
+		CBF7BF712BA4C78B00265454 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CBF7BF702BA4C78B00265454 /* song.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +21,8 @@
 		CB7FF8272B91EDD7001D1FE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB7FF8292B91EDD8001D1FE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB7FF82C2B91EDD8001D1FE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CB7FF8342B91F2B9001D1FE5 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		CBD276C02B92327C00FD61F4 /* Sound-generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound-generator.swift"; sourceTree = "<group>"; };
+		CBF7BF702BA4C78B00265454 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 		CB7FF8332B91F2B9001D1FE5 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				CB7FF8342B91F2B9001D1FE5 /* song.mp3 */,
+				CBF7BF702BA4C78B00265454 /* song.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -141,7 +141,7 @@
 			files = (
 				CB7FF82D2B91EDD8001D1FE5 /* Preview Assets.xcassets in Resources */,
 				CB7FF82A2B91EDD8001D1FE5 /* Assets.xcassets in Resources */,
-				CB7FF8352B91F2B9001D1FE5 /* song.mp3 in Resources */,
+				CBF7BF712BA4C78B00265454 /* song.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

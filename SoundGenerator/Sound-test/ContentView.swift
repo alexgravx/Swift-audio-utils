@@ -91,13 +91,12 @@ struct ContentView: View {
                     }
                     
                     Button("Générer son") {
-                        SoundGenerator(frequency: frequency, amplitude: 0.5, duration: duration, signal_string: selectedsong.rawValue)
+                        SoundGenerator(frequency: frequency, amplitude: amplitude, duration: duration, signal_string: selectedsong.rawValue)
                     }
                     
                     Button("Stopper son") {
-                        stopSound(duration: duration)
+                        stopSound()
                     }
-                    
                 }
             }
             .navigationTitle("SongGenerator")

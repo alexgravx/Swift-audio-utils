@@ -50,6 +50,7 @@ let triangle = { (phase: Float) -> Float in
 
 let engine = AVAudioEngine()
 var run_duration: Float = 0
+var CFR_List: [CFRunLoop] = []
 
 func SoundGenerator(frequency: Float, amplitude: Float, duration: Float, signal_string: String) {
     
@@ -106,13 +107,14 @@ func SoundGenerator(frequency: Float, amplitude: Float, duration: Float, signal_
     
     engine.connect(srcNode, to: mainMixer, format: inputFormat)
     engine.connect(mainMixer, to: output, format: outputFormat)
-    mainMixer.outputVolume = 0.5
+    mainMixer.outputVolume = 1
     
     DispatchQueue.main.async {
         do {
             try engine.start()
             print("loop launched")
             CFRunLoopRunInMode(.defaultMode, CFTimeInterval(duration), false)
+            CFR_List.append(CFRunLoopGetCurrent())
             engine.stop()
         } catch {
             print("Could not start engine: \(error)")
@@ -121,12 +123,13 @@ func SoundGenerator(frequency: Float, amplitude: Float, duration: Float, signal_
     
 }
 
-func stopSound(duration: Float) {
+func stopSound() {
     print("Son coupé")
     if player != nil {
         player.stop()
     }
     engine.stop()
+    CFRunLoopStop(CFRunLoopGetCurrent())
 }
 
 var player: AVAudioPlayer!

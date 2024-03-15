@@ -24,20 +24,20 @@ struct DraggableChartView: View {
     let max_y: Int = 20
     
     let freq_values: [Int: String] = [
-        1: "60Hz",
-        2: "150Hz",
-        3: "400Hz",
-        4: "700Hz",
-        5: "1kHz",
-        6: "2.4kHz",
-        7: "5kHz",
-        8: "10kHz",
-        9: "15kHz"
+        1: "L1",
+        2: "L2",
+        3: "L3",
+        4: "L4",
+        5: "L5",
+        6: "L6",
+        7: "L7",
+        8: "L8",
+        9: "L9"
     ]
     
      var body: some View {
          VStack() {
-             Text("Audio Frequency Modulation")
+             Text("Draggable Graph")
                  .font(.system(size: 16, weight: .medium))
                  .padding()
              
