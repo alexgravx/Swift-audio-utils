@@ -6,8 +6,10 @@ Swift utils & tools for audio and grah visualisation
 
 This tool allows you to create a graph whose values can be modified by dragging and dropping.
 
-![Image Drag1](./DraggableGraph/Drag1.jpg)
-![Image Drag2](./DraggableGraph/Drag2.jpg)
+<p float="left">
+  <img src="./DraggableGraph/Drag1.jpg" width="100" />
+  <img src="./DraggableGraph/Drag2.jpg" width="100" /> 
+</p>
 
 ## FFT Graph
 
