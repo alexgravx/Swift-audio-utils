@@ -24,14 +24,13 @@ struct FrequencyGraph: View {
     init(audio_pipeline: Audio) {
         self.audio_pipeline = audio_pipeline
         try! audio_pipeline.startRecording()
-        @State var data = audio_pipeline.data
     }
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
                 Text("FFT Graph").font(.headline)
-                Text(String("\(refresh)")).foregroundStyle(Color.init(UIColor(red: 0.96, green:0.96, blue:0.98, alpha: 0.95)))
+                Text(String("\(refresh)")).foregroundStyle(Color.init(UIColor(red: 0, green:0, blue:0, alpha: 0)))
             }
             Chart {
                 ForEach(audio_pipeline.data, id: \.id) { item in
@@ -58,7 +57,7 @@ struct FrequencyGraph: View {
         }
         .onReceive(updateTimer) { _ in refresh.toggle()}
         .padding(25)
-        .background(Color.init(UIColor(red: 0.96, green:0.96, blue:0.98, alpha: 0.95)))
+        .background(Color(uiColor: .systemGray6))
         .frame(width: 350, height: 400)
         .cornerRadius(20)
     }
